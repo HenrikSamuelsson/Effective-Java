@@ -2,6 +2,25 @@
 ## Purpose  
 A static factory method in a class returns an instance of the class. Note that this means that a static factory methods do the same thing as constructors.  
 
+## Example Code  
+```  
+public class Point {
+    private int xCoord = 0;
+    private int yCoord = 0;
+
+    // constructor is private so it can not be used to create objects
+    private Point(int a, int b) {
+        xCoord = a;
+        yCoord = b;
+    }
+
+	// static factory method that returns an object of this class
+	public static Point newInstance(int x, int y) {
+		return new Point(x, y);	
+	}
+}
+```
+
 ## Advantages  
 Static factory methods can have any name, unlike constructors that always have the same name as the class. Choosing a good name for a factory method can make the code clearer and cuts down on the need for additional documentation of the code.  
 
