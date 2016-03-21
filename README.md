@@ -10,5 +10,7 @@ Published: May 2008
 An excellent book, filled with advice on Java programming language usage and object-oriented programming in general.  
 
 ## Items  
-The information in the book is presented as a number of sets containing different items. The links below contains summary information and example code on some different items from the book.  
+The information in the book is presented as a number of sets containing different items. The links below contains summary information and example code on some different items from the book.
+
+## Creating and Destroying Objects    
 [1. Static factory methods](/Resources/Item_01/Item_01.md)
