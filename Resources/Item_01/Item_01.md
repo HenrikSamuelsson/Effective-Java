@@ -5,19 +5,19 @@ A static factory method in a class returns an instance of the class. Note that t
 ## Example Code  
 ```  
 public class Point {
-    private int xCoord = 0;
-    private int yCoord = 0;
+    private int x = 0;
+    private int y = 0;
 
     // constructor is private so it can not be used to create objects
-    private Point(int a, int b) {
-        xCoord = a;
-        yCoord = b;
+    private Point(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
-	// static factory method that returns an object of this class
-	public static Point newInstance(int x, int y) {
-		return new Point(x, y);	
-	}
+    // static factory method that returns an object of this class
+    public static Point newInstance(int x, int y) {
+	return new Point(x, y);	
+    }
 }
 ```
 
